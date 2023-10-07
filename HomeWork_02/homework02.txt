@@ -1,0 +1,34 @@
+Homework for exceptions and internal classes:
+
+
+1) Create a java class MyNumbers that has integer array. The the constructor of MyNumbers should receive the number of the elements in the array of MyNumbers.
+Write a setter and a getter for the elements of the array.
+The setter and the getter should check if the index that the user has provided is ok
+And the setter should also check if there are duplicates. If the number provided already exists it should not insert it again.
+Write a function in the class that returns the average of the array.
+
+Create your own exceptions - throw one if the array index is not ok, and a different one if the user tried to enter the same number twice.
+
+2) - Write a Vehicle class defined by vehicType and vehicNom of String type in which there is an
+internal motor class such that each vehicle is associated with a motor of type motorType. The
+motor is said to be "Large" if the type of vehicle it is associated with is "4WD" and its name is
+"Crysler", "Small" otherwise.
+- - The number of doors of a vehicle is equal to the number of passenger doors and the trunk. Write
+the internal static Door class defined by passengerdoor and trunk and a getTotalDoors() method
+that returns the total number of doors in the vehicle.
+- - What happens if we try to access from getTotalPortes() one of the attributes of Vehicle?
+- Write the main program which allows to test these 3 classes.
+
+
+3)
+Write an Enterprise class. A company has a number of employees, a capital, a name, a mission, and a
+public String mission() method which returns the company's mission and declares the
+SecretMissionException to be thrown. We will also have a public int capital() method which returns the
+capital and which declares the throwing of the exception NonProfitException.
+- Write a class EntrepriseSecret which inherits from Entreprise and whose mission() method launches
+the exception SecretMissionException when the mission is not specified because it is secret.
+- Write a class EntrepriseSansProfit which inherits from Entreprise and whose capital() method launches
+the NonProfitException exception when the company has no capital.
+- Write a method that takes a table of companies as input and displays the mission and the capital of all the companies (when possible).
+- Test the method on the companies ”Ford”, ”CIA”, ”Spectre”, ”CroixRouge”, ”Microsoft”, ”Efrei”.
+

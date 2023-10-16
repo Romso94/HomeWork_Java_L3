@@ -12,6 +12,6 @@ public class Main {
         liste.addToBack(student3);
 
         System.out.println("Liste chaînée des étudiants :");
-        liste.remove(1);
+        liste.find("Alice");
     }
 }

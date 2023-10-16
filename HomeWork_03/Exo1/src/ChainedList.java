@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class ChainedList {
     private Student head;
     private Student tail;
@@ -73,6 +75,21 @@ public class ChainedList {
             System.out.println("Can't find the Student via this ID : " + studentID);
             return;
         }
+    }
+
+    public void find(String name){
+        Student currentStudent = head;
+        while (currentStudent != null && !currentStudent.name.equals(name)){
+            currentStudent = currentStudent.next;
+        }
+
+        if(currentStudent != null){
+            System.out.println("Student : " + currentStudent.name);
+            System.out.println("Id : n° " + currentStudent.ID);
+            System.out.println("email : " + currentStudent.email);
+            return;
+        }
+        System.out.println("Student not found !");
     }
 
 

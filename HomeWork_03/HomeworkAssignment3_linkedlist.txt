@@ -1,0 +1,21 @@
+Exercise:
+Create a java program that stores students in a doubly linked list (which you have to create manually).
+The students have a name, an ID and an email address.
+
+The students are stored in a doubly linked list (one that stores the previous and the next variable as well).
+The functions that your class should be able to perform:
+addToFront(Student)
+addToBack(Student)
+remove(Student_by_id)
+find(student_name)
+modifyEmail(student_name)
+printStudents()
+printStudentsBackwards()
+
+Extra features that you might try to implement:
+- the same ID number should not be accepted
+- store the Students sorted to make search faster
+- with the sorted students start the search in the middle
+
+Create additional classes if you need - and if you have any other interesting ideas then implement those as well.
+

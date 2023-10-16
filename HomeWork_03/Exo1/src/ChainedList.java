@@ -92,5 +92,18 @@ public class ChainedList {
         System.out.println("Student not found !");
     }
 
+    public void modifyEmail(String name, String email){
+        Student currentStudent = head;
+        while (currentStudent != null && !currentStudent.name.equals(name)){
+            currentStudent = currentStudent.next;
+        }
+        if(currentStudent != null) {
+            currentStudent.email = email;
+            System.out.println("Email updated !");
+            return;
+        }
+        System.out.println("Student not found !");
+    }
 
 }
+

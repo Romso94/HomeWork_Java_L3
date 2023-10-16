@@ -105,5 +105,18 @@ public class ChainedList {
         System.out.println("Student not found !");
     }
 
+    public void printStudent(){
+        Student currentStudent = head;
+        if(currentStudent == null){
+            System.out.println("List is empty !");
+            return;
+        }
+        while (currentStudent != null ){
+
+            System.out.println(" Student n° " + currentStudent.ID + " Name  " + currentStudent.name + " Email " + currentStudent.email  );
+            currentStudent = currentStudent.next;
+        }
+    }
+
 }
 
